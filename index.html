@@ -1,0 +1,54 @@
+<!doctype html>
+<html lang="no">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>LoL AutoEdit</title>
+<meta name="description" content="LoL AutoEdit redigerer opptak av League of Legends-sendinger automatisk og laster dem opp til eierens egen YouTube-kanal.">
+<style>
+  :root { --bg:#0e1014; --card:#161920; --border:#262b37; --text:#e8eaf0; --muted:#8a92a6; --accent:#6d7cff; }
+  * { box-sizing: border-box; }
+  body { margin:0; background:var(--bg); color:var(--text); font:16px/1.6 "Segoe UI", system-ui, sans-serif; }
+  main { max-width:760px; margin:0 auto; padding:64px 16px; }
+  .logo { width:56px; height:56px; border-radius:14px; background:linear-gradient(135deg,#1e78eb,#7828c8);
+          display:grid; place-items:center; margin-bottom:20px; }
+  .logo::after { content:""; border-left:20px solid #fff; border-top:12px solid transparent; border-bottom:12px solid transparent; margin-left:6px; }
+  h1 { font-size:36px; margin:0 0 6px; }
+  .lead { color:var(--muted); font-size:18px; margin:0 0 36px; }
+  .card { background:var(--card); border:1px solid var(--border); border-radius:14px; padding:24px 28px; margin-bottom:16px; }
+  h2 { font-size:18px; margin:0 0 10px; }
+  ul { margin:0; padding-left:20px; color:#c7ccd8; }
+  li { margin:4px 0; }
+  a { color:var(--accent); }
+  footer { color:var(--muted); font-size:14px; margin-top:32px; }
+</style>
+</head>
+<body>
+<main>
+  <div class="logo" aria-hidden="true"></div>
+  <h1>LoL AutoEdit</h1>
+  <p class="lead">Et privat verktøy som automatisk redigerer opptak av League of Legends-sendinger fra Komplettligaen og laster dem opp til eierens egen YouTube-kanal.</p>
+
+  <div class="card">
+    <h2>Hva appen gjør</h2>
+    <ul>
+      <li>Finner kampene i et OBS-opptak og klipper bort pauser, champ select og tiden mellom kart.</li>
+      <li>Rendrer en ferdig video og gir den navn etter lagene i kampen.</li>
+      <li>Laster opp den ferdige videoen som <em>unlisted</em> til eierens egen YouTube-kanal.</li>
+    </ul>
+  </div>
+
+  <div class="card">
+    <h2>Bruk av Google- og YouTube-data</h2>
+    <ul>
+      <li>Appen bruker YouTube Data API kun for å laste opp videoer til, og endre titler på, eierens egen kanal.</li>
+      <li>Innloggingen lagres bare lokalt på eierens PC. Ingen data sendes til andre enn Google/YouTube.</li>
+      <li>Appen er ikke tilgjengelig for andre brukere.</li>
+    </ul>
+  </div>
+
+  <p><a href="privacy.html">Personvernerklæring</a></p>
+  <footer>Kontakt: <a href="mailto:hakon.gabrielsen98@hotmail.com">hakon.gabrielsen98@hotmail.com</a></footer>
+</main>
+</body>
+</html>
